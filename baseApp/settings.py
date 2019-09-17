@@ -124,3 +124,12 @@ STATIC_URL = '/static/'
 # Media config
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+
+#emails
+if DEBUG:
+    EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
+    EMAIL_FILE_PATH = os.path.join(BASE_DIR, 'send_emails')
+else:
+    #aqui se configura el servidor de email para produccion
+    pass
