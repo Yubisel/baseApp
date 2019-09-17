@@ -1,0 +1,19 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[scripts]
+dev = "python manage.py runserver"
+make = "python manage.py makemigrations"
+migrate = "python manage.py migrate"
+startapp = "python manage.py startapp"
+
+[dev-packages]
+pylint = "*"
+
+[packages]
+django = "*"
+
+[requires]
+python_version = "3.6"
