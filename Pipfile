@@ -15,7 +15,7 @@ pylint = "*"
 [packages]
 django = "*"
 django-debug-toolbar = "*"
-pillow = "*"
+pillow = ">=6.2.0"
 
 [requires]
 python_version = "3.6"
